@@ -1,0 +1,6 @@
+ctarpr.settings:
+  title: CTARPR Settings
+  description: Content Type Access Restriction per Role
+  parent: system.admin_config_system
+  route_name: ctarpr.settings
+  weight: 10

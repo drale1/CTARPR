@@ -1,0 +1,32 @@
+<?php
+/**
+* @file
+* A description of what your module does.
+*/
+
+/**
+ * Implements hook_help().
+ */
+function ctarpr_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    case 'help.page.ctarpr':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Content Type Access Restrict Per Role.') . '</p>';
+      $output .= '<p>' . t('This module restrict access for certain type of content, with redirection.') . '</p>';
+      $output .= '<p>' . t('It means, you can restrict access of Article content type.') . '</p>';
+      $output .= '<p>' . t('and make redirection to some other node.') . '</p>';
+      $output .= '<p>' . t('<br>') . '</p>';
+      $output .= '<p>' . t('1. Go to /admin/config/system/ctarpr-settings') . '</p>';
+      $output .= '<p>' . t('2. Check role(s) under certain content type what you want to restrict access and click Submit') . '</p>';
+      $output .= '<p>' . t('3. Make new content under non-restricted content type and remember number of that node.') . '</p>';
+      $output .= '<p>' . t('   That will be page where visitors with restricted access be redirected.') . '</p>';
+      $output .= '<p>' . t('4. Go to /admin/config/system/ctarpr-settings again and under roles you checked.') . '</p>';
+      $output .= '<p>' . t('   type number of node for redirection page you created.') . '</p>';
+      $output .= '<p>' . t('<br>') . '</p>';
+      return $output;
+
+    default:
+  }
+}

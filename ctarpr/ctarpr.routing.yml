@@ -1,0 +1,7 @@
+ctarpr.settings:
+  path: '/admin/config/system/ctarpr-settings'
+  defaults:
+    _title: 'CTARPR Settings'
+    _form: 'Drupal\ctarpr\Form\CTARPRSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

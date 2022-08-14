@@ -1,0 +1,6 @@
+name: CTARPR
+type: module
+description: Content Type Access Restriction per Role
+package: drax
+core_version_requirement: ^9 || ^10
+
