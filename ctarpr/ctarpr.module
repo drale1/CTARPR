@@ -14,7 +14,7 @@ function ctarpr_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $rout
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('Content Type Access Restrict Per Role.') . '</p>';
-      $output .= '<p>' . t('This module restrict access for certain type of content, with redirection.') . '</p>';
+      $output .= '<p>' . t('This module restricts access for certain type of content, with redirection.') . '</p>';
       $output .= '<p>' . t('It means, you can restrict access of Article content type.') . '</p>';
       $output .= '<p>' . t('and make redirection to some other node.') . '</p>';
       $output .= '<p>' . t('<br>') . '</p>';
