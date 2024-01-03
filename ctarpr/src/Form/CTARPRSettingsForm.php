@@ -88,19 +88,9 @@ class CTARPRSettingsForm extends ConfigFormBase
             '#markup' => '<hr>'
           ];
       }
-    kint($this->config('ctarpr.settings'));
     return parent::buildForm($form, $form_state);
   }
-
-  /**
-   * {@inheritdoc}
-   */
-/*  public function validateForm(array &$form, FormStateInterface $form_state) {
-    if ($form_state->getValue('example') != 'example') {
-      $form_state->setErrorByName('example', $this->t('The value is not correct.'));
-    }
-    parent::validateForm($form, $form_state);
-  }*/
+  
 
   /**
    * {@inheritdoc}
